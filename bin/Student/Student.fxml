@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#pretraziPredmete" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F2E8E3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student.StudentController3">
+	<children>
+		<Label fx:id="welcomeLabel" layoutX="30.0" layoutY="14.0" text="DOBRODOŠLI" textFill="#b91c1c">
+			<font>
+				<Font size="28.0" />
+			</font>
+		</Label>
+		<Label layoutX="48.0" layoutY="162.0" prefHeight="16.0" prefWidth="117.0" text="Zimski semestar:" textFill="#b91c1c" />
+		<ListView fx:id="zimskiLV" layoutX="48.0" layoutY="178.0" prefHeight="200.0" prefWidth="713.0" />
+		<ListView fx:id="ljetniLV" layoutX="48.0" layoutY="426.0" prefHeight="200.0" prefWidth="713.0" />
+		<Label layoutX="48.0" layoutY="410.0" prefHeight="16.0" prefWidth="117.0" text="Ljetni semestar" textFill="#b91c1c" />
+		<Button fx:id="dodajZimski" layoutX="694.0" layoutY="386.0" mnemonicParsing="false" onAction="#dodajZimski" style="-fx-background-color: #970007;" text="DODAJ!" textFill="WHITE" />
+		<Button fx:id="dodajLjetni" layoutX="694.0" layoutY="626.0" mnemonicParsing="false" onAction="#dodajLjetni" style="-fx-background-color: #970007;" text="DODAJ!" textFill="WHITE" />
+		<ListView fx:id="odabraniLV" layoutX="811.0" layoutY="186.0" prefHeight="438.0" prefWidth="366.0" />
+		<Label layoutX="811.0" layoutY="162.0" prefHeight="16.0" prefWidth="132.0" text="Odabrani predmeti:" textFill="#b91c1c" />
+		<Button fx:id="izbaciB" layoutX="1115.0" layoutY="626.0" mnemonicParsing="false" onAction="#izbaciIzDodanih" style="-fx-background-color: #970007;" text="IZBACI" textFill="WHITE" />
+		<Label fx:id="statusL" layoutX="30.0" layoutY="59.0" text="STATUS: " textFill="#b91c1c">
+			<font>
+				<Font size="28.0" />
+			</font>
+		</Label>
+		<AnchorPane layoutX="1163.0" layoutY="4.0" prefHeight="111.0" prefWidth="117.0" style="-fx-background-color: #F2E8E3;">
+			<children>
+				<Button layoutX="14.0" layoutY="44.0" mnemonicParsing="false" onAction="#zahtjev" prefHeight="24.0" prefWidth="87.0" style="-fx-background-color: #970007;" text="ZAHTJEV" textFill="WHITE" />
+				<Button fx:id="zakljucajB" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#zakljucaj" style="-fx-background-color: #970007;" text="ZAKLJUCAJ" textFill="WHITE" />
+				<Button fx:id="logout" layoutX="14.0" layoutY="73.0" mnemonicParsing="false" onAction="#userLogOut" prefHeight="24.0" prefWidth="87.0" style="-fx-background-color: #970007;" text="LOG OUT" textFill="WHITE" />
+			</children>
+		</AnchorPane>
+      <TextField fx:id="pretragaPredmetaTF" layoutX="180.0" layoutY="126.0" onKeyTyped="#pretraziPredmete" prefHeight="24.0" prefWidth="580.0" />
+      <Label layoutX="48.0" layoutY="128.0" prefHeight="16.0" prefWidth="132.0" text="Pretrazi predmete: " textFill="#b91c1c" />
+	</children>
+</AnchorPane>

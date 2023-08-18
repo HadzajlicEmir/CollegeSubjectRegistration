@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F2E8E3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nastavnik.PrenosBodovaController">
+	<children>
+		<ListView fx:id="LV" layoutX="497.0" layoutY="274.0" prefHeight="364.0" prefWidth="276.0" />
+		<ComboBox fx:id="CB" layoutX="497.0" layoutY="203.0" prefHeight="24.0" prefWidth="276.0" />
+		<Label layoutX="497.0" layoutY="175.0" text="PREDMET:" textFill="#970007" />
+		<Label layoutX="497.0" layoutY="249.0" text="LISTA STUDENATA:" textFill="#970007" />
+		<Button fx:id="prikazi" layoutX="798.0" layoutY="203.0" mnemonicParsing="false" onAction="#prikazi" style="-fx-background-color: #970007;" text="PRIKAZI" textFill="WHITE" />
+		<Button fx:id="back" layoutX="50.0" layoutY="654.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #b91c1c;" text="&lt;---" textFill="WHITE" />
+      <HBox alignment="CENTER" prefHeight="133.0" prefWidth="1280.0" style="-fx-background-color: #970007;">
+         <children>
+      		<Label text="Prenos bodova" textFill="WHITE">
+      			<font>
+      				<Font size="24.0" />
+      			</font>
+      		</Label>
+         </children>
+      </HBox>
+	</children>
+</AnchorPane>

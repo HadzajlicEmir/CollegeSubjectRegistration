@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F2E8E3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prodekan.PeriodRegistracijeController">
+   <children>
+      <DatePicker fx:id="pocetakReg" layoutX="397.0" layoutY="229.0" />
+      <Label layoutX="397.0" layoutY="197.0" text="Datum pocetka registracije" textFill="#970009" />
+      <Label layoutX="708.0" layoutY="197.0" text="Datum zavrsetka registracije" textFill="#970009" />
+      <DatePicker fx:id="krajReg" layoutX="699.0" layoutY="229.0" />
+      <Button fx:id="dodaj" layoutX="590.0" layoutY="348.0" mnemonicParsing="false" onAction="#spremiDatume" prefHeight="24.0" prefWidth="100.0" style="-fx-background-color: #970009;" text="DODAJ ROK" textFill="#f2e8e3" />
+      <Button fx:id="backButton" layoutX="53.0" layoutY="606.0" mnemonicParsing="false" onAction="#backToProdekan" style="-fx-background-color: #970009;" text="&lt;---" textFill="#f2e8e3" />
+      <Pane layoutX="-5.0" prefHeight="151.0" prefWidth="1289.0" style="-fx-background-color: #970009;">
+         <children>
+            <Label layoutX="409.0" layoutY="61.0" text="Definišite rok za registraciju predmeta:" textFill="#f2e8e3">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

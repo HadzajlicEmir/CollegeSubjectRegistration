@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F2E8E3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prodekan.ProdekanController">
+	<children>
+      <ImageView fitHeight="673.0" fitWidth="321.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/IMG_6899_polarr.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="682.0" fitWidth="321.0" layoutX="959.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/IMG_1092_polarr.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="199.0" fitWidth="199.0" layoutX="543.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="593.0" fitWidth="797.0" layoutX="247.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/IMG_1757_polarr.jpeg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="151.0" prefWidth="1287.0" style="-fx-background-color: #970007;">
+         <children>
+      				<AnchorPane layoutX="4.0" layoutY="51.0" prefHeight="50.0" prefWidth="1280.0" style="-fx-background-color: #F2E8E3;">
+      					<children>
+      						<Button fx:id="azurirajPredmet" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#goToAzurirajPredmet" prefHeight="24.0" prefWidth="175.0" style="-fx-background-color: #970009;" text="AŽURIRAJ PREDMET" textFill="WHITE" />
+      						<Button fx:id="azurirajNastavnika" layoutX="206.0" layoutY="12.0" mnemonicParsing="false" onAction="#goToAzurirajNastavnika" prefHeight="24.0" prefWidth="175.0" style="-fx-background-color: #970009;" text="AŽURIRAJ NASTAVNIKA" textFill="#fcfcfc" />
+      						<Button fx:id="periodRegistracije" layoutX="397.0" layoutY="12.0" mnemonicParsing="false" onAction="#goToPeriodRegistracije" prefHeight="24.0" prefWidth="175.0" style="-fx-background-color: #970009;" text="PERIOD REGISTRACIJE" textFill="WHITE" />
+      						<Button fx:id="logOut" layoutX="1172.0" layoutY="12.0" mnemonicParsing="false" onAction="#userLogOut" prefHeight="24.0" prefWidth="101.0" style="-fx-background-color: #970009;" text="LOG OUT" textFill="WHITE" />
+      						<Button fx:id="pregledZahtjeva" layoutX="590.0" layoutY="12.0" mnemonicParsing="false" onAction="#goToPregledZahtjeva" prefHeight="24.0" prefWidth="175.0" style="-fx-background-color: #970009;" text="PREGLEDAJ ZAHTJEVE" textFill="WHITE" />
+      						<Button fx:id="buttonPregledStud" layoutX="781.0" layoutY="12.0" mnemonicParsing="false" onAction="#goToPregledStudenata" style="-fx-background-color: #970009;" text="PREGLED STUDENATA" textFill="WHITE" />
+      					</children>
+      				</AnchorPane>
+         </children>
+      </Pane>
+      <ImageView fitHeight="199.0" fitWidth="199.0" layoutX="543.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fe(2).png" />
+         </image>
+      </ImageView>
+	</children>
+</AnchorPane>

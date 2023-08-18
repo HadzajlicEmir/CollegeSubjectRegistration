@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F2E8E3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prodekan.AzurirajPredmetController">
+   <children>
+      <ListView fx:id="listaPredmeta" layoutX="202.0" layoutY="230.0" prefHeight="344.0" prefWidth="414.0" />
+      <Label layoutX="768.0" layoutY="210.0" text="Naziv predmeta" textFill="#970009" />
+      <TextField fx:id="nazivPredmetaTF" layoutX="768.0" layoutY="234.0" prefHeight="24.0" prefWidth="359.0" />
+      <Label layoutX="768.0" layoutY="335.0" text="Preduslov #1" textFill="#970009" />
+      <Label layoutX="768.0" layoutY="386.0" text="Preduslov #2" textFill="#970009" />
+      <Button fx:id="backButton" layoutX="53.0" layoutY="628.0" mnemonicParsing="false" onAction="#backToProdekan" style="-fx-background-color: #970009;" text="&lt;---" textFill="#f2e8e3" />
+      <ComboBox fx:id="preduslov1" layoutX="768.0" layoutY="358.0" prefHeight="24.0" prefWidth="359.0" />
+      <ComboBox fx:id="preduslov2" layoutX="768.0" layoutY="413.0" prefHeight="24.0" prefWidth="359.0" />
+      <Label layoutX="768.0" layoutY="444.0" text="Preduslov #3" textFill="#970009" />
+      <ComboBox fx:id="preduslov3" layoutX="769.0" layoutY="466.0" prefHeight="24.0" prefWidth="359.0" />
+      <Label layoutX="768.0" layoutY="496.0" text="Preduslov #4" textFill="#970009" />
+      <ComboBox fx:id="preduslov4" layoutX="768.0" layoutY="518.0" prefHeight="24.0" prefWidth="359.0" />
+      <Button fx:id="buttonOdaberi" layoutX="517.0" layoutY="586.0" mnemonicParsing="false" onAction="#prikaziPredmet" prefHeight="24.0" prefWidth="98.0" style="-fx-background-color: #970009;" text="ODABERI" textFill="#f2e8e3" />
+      <Button fx:id="buttonAzuriraj" layoutX="899.0" layoutY="628.0" mnemonicParsing="false" onAction="#backToProdekanAfterUpdate" prefHeight="24.0" prefWidth="98.0" style="-fx-background-color: #970009;" text="AZURIRAJ" textFill="#f2e8e3" />
+      <Pane layoutX="-4.0" prefHeight="151.0" prefWidth="1287.0" style="-fx-background-color: #970009;">
+         <children>
+            <Label layoutX="542.0" layoutY="61.0" text="Ažuriraj predmet" textFill="#f2e8e3">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="768.0" layoutY="267.0" text="Nosioc predmeta" textFill="#970009" />
+      <ComboBox fx:id="nosiocCB" layoutX="768.0" layoutY="294.0" prefHeight="24.0" prefWidth="359.0" />
+      <Label layoutX="202.0" layoutY="201.0" text="Pretrazi predmete: " textFill="#970009" />
+      <TextField fx:id="pretragaPredmetaTF" layoutX="329.0" layoutY="198.0" onKeyTyped="#pretraziPredmete" prefHeight="24.0" prefWidth="287.0" />
+   </children>
+</AnchorPane>

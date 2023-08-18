@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F2E8E3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prodekan.PregledStudenataController">
+	<children>
+		<Label layoutX="434.0" layoutY="169.0" text="Predmet" textFill="#a40e0e" />
+		<ComboBox fx:id="predmetCB" layoutX="434.0" layoutY="191.0" prefHeight="24.0" prefWidth="413.0" />
+		<ListView fx:id="listaStudenata" layoutX="441.0" layoutY="268.0" prefHeight="386.0" prefWidth="413.0" />
+		<HBox alignment="CENTER" prefHeight="136.0" prefWidth="1280.0" style="-fx-background-color: #970009;">
+			<children>
+				<Label text="Pregled studenata po predmetima" textAlignment="CENTER" textFill="WHITE">
+					<font>
+						<Font size="24.0" />
+					</font>
+				</Label>
+			</children>
+		</HBox>
+		<Button fx:id="back" layoutX="36.0" layoutY="665.0" mnemonicParsing="false" onAction="#backToProdekan" style="-fx-background-color: #970009;" text="&lt;---" textFill="WHITE" />
+      <Button fx:id="prikazi" layoutX="778.0" layoutY="226.0" mnemonicParsing="false" onAction="#prikazi" style="-fx-background-color: #970009;" text="PRIKAZI" textFill="WHITE" />
+	</children>
+</AnchorPane>

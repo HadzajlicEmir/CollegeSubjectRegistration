@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F2E8E3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.OdaberiProdekana">
+	<children>
+		<Button fx:id="buttonDodaj" layoutX="600.0" layoutY="637.0" mnemonicParsing="false" onAction="#backToAdmin" prefHeight="24.0" prefWidth="100.0" style="-fx-background-color: #970009;" text="ODABERI" textFill="#f2e8e3" />
+		<ListView fx:id="listView" layoutX="330.0" layoutY="205.0" prefHeight="396.0" prefWidth="639.0" />
+      <Button fx:id="backButton" layoutX="50.0" layoutY="637.0" mnemonicParsing="false" onAction="#backToMainAdmin" prefHeight="24.0" prefWidth="54.0" style="-fx-background-color: #970009;" text="&lt;---" textFill="#f2e8e3" />
+      <Pane layoutX="-4.0" prefHeight="151.0" prefWidth="1287.0" style="-fx-background-color: #970009;">
+         <children>
+      		<Label layoutX="231.0" layoutY="49.0" text="Odaberite nastavnika koji će obavljati funkciju prodekana" textFill="#f2e8e3">
+      			<font>
+      				<Font size="28.0" />
+      			</font>
+      		</Label>
+         </children>
+      </Pane>
+	</children>
+</AnchorPane>
